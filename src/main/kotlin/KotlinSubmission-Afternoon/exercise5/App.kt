@@ -7,7 +7,7 @@ fun main() {
      * Buat variable dengan nama hero dibawah ini dan isi nilai variable tersebut dengan class Hero
      *
      */
-
+    val hero = Hero()
 
     /**
      * Latihan 2
@@ -15,7 +15,7 @@ fun main() {
      * Dan isi argumen-argumen / data dari parameter sesuai data diri Anda (Name, Age, Height)
      *
      */
-
+    hero.setProfile("Gina", 20, 155)
 
 
     /**
@@ -23,7 +23,7 @@ fun main() {
      * Tampilkan data profile dibawah ini, sebelum melakukan aktivitas
      *
      */
-
+    hero.profile()
 
 
     /**
@@ -65,7 +65,12 @@ fun main() {
      * Jalankan aktivitas-aktivitas dengan memanggil fungsi-fungsi sesuai challenge diatas
      *
      */
-
+    repeat(1) { hero.jalan() }
+    repeat(2) { hero.lari() }
+    repeat(3) { hero.makan() }
+    repeat(4) { hero.minum() }
+    repeat(5) { hero.lompat() }
+    repeat(6) { hero.duduk() }
 
 
     /**
@@ -73,7 +78,7 @@ fun main() {
      * Panggil fungsi profile dibawah ini untuk menampilkan status terkini setelah melakukan aktivitas
      *
      */
-
+    hero.profile() 
 
 
 }
